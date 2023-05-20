@@ -25,7 +25,7 @@ const AddTodo = () => {
         <input
           className='todoInput'
           type='input'
-          placeholder='Enter todo item'
+          placeholder='Enter task here'
           name='todoText'
           value={input}
           onChange={handleInput}
