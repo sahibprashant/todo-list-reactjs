@@ -1,4 +1,5 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useReducer, useState } from "react";
+import { TodoReducer } from "./Reducer";
 
 
 const TodoContext = createContext();
@@ -7,10 +8,11 @@ export function todoContext() {
 }
 
 function Context({ children }) {
-    const [state, setState] = useState([]);
 
+    const [state, dispatch] = useReducer(TodoReducer, []);
+    
     return (
-        <TodoContext.Provider value={{ state, setState }}>{children}</TodoContext.Provider>
+        <TodoContext.Provider value={{ state, dispatch }}>{children}</TodoContext.Provider>
     )
 }
 

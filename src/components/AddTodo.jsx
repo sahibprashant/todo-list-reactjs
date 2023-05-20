@@ -3,19 +3,14 @@ import { todoContext } from '../context/Context';
 
 const AddTodo = () => {
   const [input, setInput] = useState('');
-  const { state, setState } = todoContext();
+  const { state, dispatch } = todoContext();
 
   function handleInput(e) {
     setInput(e.target.value);
   }
 
   function addTodo() {
-    const todoItem = {
-      id: new Date().getTime().toLocaleString(),
-      title: input,
-      isDone: false,
-    }
-    setState([...state, todoItem]);
+    dispatch({ type: 'TODO_ADD', payload: input });
     setInput('');
   }
 
