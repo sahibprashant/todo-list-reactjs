@@ -1,0 +1,39 @@
+#root {
+    --DARK: #212121;
+    --LIGHT: #EBECEC;
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+.App {
+    font-family: 'regular';
+    font-size: 14px;
+    color: var(--DARK);
+    background-color: var(--LIGHT);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.headerContainer>h2 {
+    font-family: 'medium';
+    /* background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}

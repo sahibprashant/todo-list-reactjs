@@ -1,13 +1,8 @@
-:root {
+body {
+  margin: 0;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  min-height: 100vh;
 }
