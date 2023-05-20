@@ -8,9 +8,11 @@ function App() {
   return (
     <div className='App'>
       <Header />
-      <AddTodo />
-      <TaskList />
-      <Status />
+        <div className='todo-list-app'>
+          <AddTodo />
+          <Status />
+          <TaskList />
+        </div>
     </div>
   )
 }

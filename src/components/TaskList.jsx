@@ -22,7 +22,7 @@ const TaskList = () => {
   }
 
   return (
-    <div>
+    <div className='taskList'>
       {state.map((item, index) => {
         return (
           <TodoItem

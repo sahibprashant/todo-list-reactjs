@@ -20,11 +20,13 @@ const AddTodo = () => {
   }
 
   return (
-    <div className='addTodoContainer'>
-      <form onSubmit={(e) => {
-        e.preventDefault();
-        addTodo();
-      }}>
+    <>
+      <form
+        className='addTodoForm'
+        onSubmit={(e) => {
+          e.preventDefault();
+          addTodo();
+        }}>
         <input
           className='todoInput'
           type='input'
@@ -41,7 +43,7 @@ const AddTodo = () => {
           value={'Add Todo'}
         />
       </form>
-    </div>
+    </>
   )
 }
 
